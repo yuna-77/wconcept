@@ -1,0 +1,514 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 14px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+body {
+	line-height: 1;
+	font-family: "Roboto", "noto Sans kr", sans-serif;
+}
+
+.skip_nav a {
+	position: fixed;
+	left: 0;
+	top: -9999px;
+	z-index: 9999;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	font-size: 0.875em;
+	background-color: #385170;
+	color: #fff;	
+}
+
+.skip_nav a:focus {
+	top: 0;
+	text-decoration: underline;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	width: 1020px;
+	height: 120px;
+}
+#header .sns {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+#header .sns ul {
+	display: flex;
+	gap: 6px;
+}
+#header .sns .button {
+	display: flex;
+	align-items: center;
+}
+
+#header .utils ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+}
+#header .utils ul li a {
+	padding: 0 12px;
+	color: #999999;
+}
+#header .utils ul li:last-child a {
+	padding-right: 0;
+}
+#header .utils ul li::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 14px;
+	background-color: #aaa;
+}
+#header .utils ul li:last-child::after {
+	display: none;
+}
+
+#nav {
+	position: relative;
+	height: 55px;
+}
+#nav > ul {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	min-width: 1020px;
+	width: 100%;
+	height: 55px;
+	overflow: hidden;
+	text-align: center;
+	background-color: #fff;
+	transition: height 0.3s;
+}
+#nav > ul::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	left: 0;
+	top: 56px;
+	background-color: #aaa;
+}
+#nav:hover > ul {
+	height: 185px
+}
+#nav > ul > li {
+	position: relative;
+}
+#nav > ul > li > a {
+	display: block;
+	padding: 0 60px;
+	line-height: 55px;
+	font-size: 0.875em;
+	color: #2f2f2f;
+}
+#nav > ul > li:hover > a {
+	color: #b4252d;
+	text-decoration: double;
+}
+#nav .sub {
+	position: absolute;
+	left: 0;
+	top: 55px;
+	text-align: left;
+	padding-left: 60px;
+	padding-top: 14px;
+}
+#nav .sub a {
+	display: block;
+	padding: 6px 0 7px;
+	line-height: 1;
+	font-size: 0.75em;
+	color: #a0a0a0;
+}
+#nav .sub a:hover,
+#nav .sub a:focus {
+	text-decoration: underline;
+	color: #000;
+}
+
+.slider {
+	height: 420px;
+	overflow: hidden;
+	min-width: 1020px;
+}
+
+.slider a img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+}
+
+#section {
+	margin: 0 auto;
+	padding: 60px 0 70px; 
+	width: 1020px;
+}
+.banner1 {
+	display: flex;
+	gap: 30px;
+}	
+.banner1:focus {
+	top: 0;
+}
+.banner1_1 {
+	width: 690px;
+	height: 388px;
+} 
+.banner1_1 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.banner1_1 a img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1);
+	transition: transform 0.3s;
+}
+.banner1_1 a:hover img,
+.banner1_1 a:focus img  {
+	transform: scale(1.1);
+} 
+
+.banner1 .banner1_2 a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 388px;
+	text-align: center;
+	border: 1px solid #333;
+}
+
+.banner1 .banner1_2 a .title strong {
+	display: block;
+	padding-bottom: 8px;
+	font-size: 24px;
+}
+.banner1 .banner1_2 a .title p {
+	display: block;
+	margin-bottom: 50px;
+}
+.banner1 .banner1_2 a .desc {
+	display: block;
+	padding: 0 50px;
+	color: #999999;
+}
+
+.banner1 .banner1_2 a:hover .desc,
+.banner1 .banner1_2 a:focus .desc {
+	text-decoration: underline;
+}
+.banner1 .banner1_2 a .view_more {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 20px;
+	text-decoration: underline;
+}
+.banner1 .banner1_2 a:hover .view_more,
+.banner1 .banner1_2 a:focus .view_more {
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #B5252E;
+	
+}
+
+.banner2 {
+	display: flex;
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.banner2 .banner2_1 a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 388px;
+	text-align: center;
+	border: 1px solid #333;
+}
+
+.banner2 .banner2_1 a .title strong {
+	display: block;
+	padding-bottom: 8px;
+	font-size: 24px;
+}
+.banner2 .banner2_1 a .title p {
+	display: block;
+	margin-bottom:50px;
+}
+.banner2 .banner2_1 a .desc {
+	display: block;
+	margin: 0 70px;
+	color: #999999;
+}
+.banner2 .banner2_1 a:hover .desc,
+.banner2 .banner2_1 a:focus .desc {
+	text-decoration: underline;
+}
+.banner2 .banner2_1 a .view_more {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 20px;;
+	text-decoration: underline;
+}
+.banner2 .banner2_1 a:hover .view_more,
+.banner2 .banner2_1 a:focus .view_more {
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #B5252E;
+}
+
+.banner2_2 {
+	width: 690px;
+	height: 388px;
+}
+.banner2_2 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.banner2_2 a img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1);
+	transition: transform 0.3s;
+}
+.banner2_2 a:hover img,
+.banner2_2 a:focus img {
+	transform: scale(1.1);
+}
+
+.banner_cont {
+	display: flex;
+	gap: 30px;
+	margin-top: 30px; 
+}
+.banner_cont .banner3 {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.banner_cont .banner3 .banner3_1 a {
+	display: flex;
+	align-items: flex-end;
+	width: 495px;
+	height: 570px;
+	color: #fff;
+	background-image: url(../images/heich.jpg);
+}
+.banner_cont .banner3 .banner3_1 a .inner {
+	/*padding-left: 28px;
+	padding-top: 404px;*/
+	margin-left: 28px;
+	margin-bottom: 55px;
+}
+.banner_cont .banner3 .banner3_1 a .inner span {
+	display: block;
+	padding: 8px 0;
+}
+.banner_cont .banner3 .banner3_1 a .inner strong {
+	display: block;
+	margin-top: 8px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.banner_cont .banner3 .banner3_1 a .inner span.view {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 18px;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+
+.banner_cont .banner3 .banner3_1 a:hover .inner span.view,
+.banner_cont .banner3 .banner3_1 a:focus .inner span.view {
+	background-color: #fff;
+	color: #333;
+}
+
+.banner_cont .banner3 .banner3_2 a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 490px;
+	height: 300px;
+	background-image: url(../images/new.png);
+}
+
+.banner_cont .banner3 .banner3_2 a:hover .inner,
+.banner_cont .banner3 .banner3_2 a:focus .inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 465px;
+	height: 270px;
+	background-image: url(../images/new1.jpg);
+	color: #fff;
+}
+.banner_cont .banner3 .banner3_2 a .inner strong {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 36px;
+}
+.banner_cont .banner3 .banner3_2 a .inner span {
+	display: block;
+}
+.banner_cont .banner3 .banner3_2 a .inner span.view {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 18px;
+	background-color: #333;
+	color: #fff;
+}
+
+.banner_cont .banner3 .banner3_2 a:hover .inner span.view,
+.banner_cont .banner3 .banner3_2 a:focus .inner span.view {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 18px;
+	color: #fff;
+	background-color: #B5252E;
+}
+
+.banner_cont .banner4 {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.banner_cont .banner4 .banner4_1 a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width:490px ;
+	height: 300px;
+	border: 1px solid #333;
+}
+.banner_cont .banner4 .banner4_1 a:hover .inner,
+.banner_cont .banner4 .banner4_1 a:focus .inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	width:490px ;
+	height: 300px;
+	background-image: url(../images/sale.jpg);
+	color: #fff;
+}
+.banner_cont .banner4 .banner4_1 a .inner strong {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 36px;
+}
+.banner_cont .banner4 .banner4_1 a .inner span{
+	display: block;
+}
+.banner_cont .banner4 .banner4_1 a .inner span.view {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 18px;
+	background-color: #333;
+	color: #fff;
+}
+.banner_cont .banner4 .banner4_1 a:hover .inner span.view,
+.banner_cont .banner4 .banner4_1 a:focus .inner span.view {
+	padding: 10px 18px;
+	color: #fff;
+	background-color: #B5252E;
+}
+
+
+.banner_cont .banner4 .banner4_2 a{
+	display: flex;
+	align-items: flex-end;
+	width: 495px;
+	height: 570px;
+	background-image: url(../images/mimic.jpg);
+	color: #fff;
+	font-size: 14px;
+}
+.banner_cont .banner4 .banner4_2 a .inner{
+	margin-left: 28px;
+	margin-bottom: 55px;
+}
+.banner_cont .banner4 .banner4_2 a .inner span {
+	display: block;
+	padding-bottom: 8px;
+}
+.banner_cont .banner4 .banner4_2 a .inner strong {
+	display: block;
+	font-size: 24px;
+}
+.banner_cont .banner4 .banner4_2 a .inner span.view {
+	display: inline-block;
+	margin-top: 30px;
+	border: 1px solid #fff;
+	padding: 10px 18px;
+	box-sizing: border-box;
+}
+.banner_cont .banner4 .banner4_2 a:hover .inner span.view,
+.banner_cont .banner4 .banner4_2 a:focus .inner span.view {
+	background-color: #fff;
+	color: #333;
+}
+
+footer { 
+	min-width: 1020px;
+	text-align: center;
+	padding: 50px 0;
+	background-color: #333;
+	color: #999999;
+
+}
+
+footer .address a {
+	display: inline-block;
+	margin-left: 18px;
+}
+footer ul {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 25px;
+}
+footer .copy {
+	margin-top: 25px;
+	font-size: 12px;
+}
